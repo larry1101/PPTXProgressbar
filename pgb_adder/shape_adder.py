@@ -4,9 +4,9 @@ from pptx.enum.shapes import MSO_SHAPE
 
 
 def add_rect(slide, left, top, width, height, fill='89ABBF'):
-    # left, top, width, height = Inches(0), Inches(0), Inches(13.3326), Inches(0.10625)  # 预设位置及大小
-    # left, top, width, height = Inches(0), Inches(0), Length(12192000), Length(100000)  # 预设位置及大小
-    shape = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left, top, width, height)  # 在指定位置按预设值添加类型为PENTAGON的形状
+    # left, top, width, height = Inches(0), Inches(0), Inches(13.3326), Inches(0.10625)
+    # left, top, width, height = Inches(0), Inches(0), Length(12192000), Length(100000)
+    shape = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left, top, width, height)
 
     shape_fill = shape.fill
     shape_fill.solid()
@@ -18,7 +18,7 @@ def add_rect(slide, left, top, width, height, fill='89ABBF'):
 
 
 def add_text(slide, left, top, width, height, size, text=''):
-    shape = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left, top, width, height)  # 在指定位置按预设值添加类型为PENTAGON的形状
+    shape = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left, top, width, height)
     shape_fill = shape.fill
     shape_fill.background()
     shape_border_line = shape.line
