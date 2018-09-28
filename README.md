@@ -12,5 +12,7 @@ add a progressbar to pptx slides
 from pptx import Presentation
 from pgb_adder.pgb_adder import add_pgb
 
-add_pgb(Presentation('XXX.pptx'))
+p=Presentation('XXX.pptx')
+add_pgb(p)
+p.save('XXX2.pptx')
 ```
