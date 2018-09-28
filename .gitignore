@@ -1,0 +1,14 @@
+.idea
+
+*.jpg
+*.ppt
+*.pptx
+*.doc
+*.docx
+
+tt*.py
+*_dou.py
+
+*.exe
+
+data*
